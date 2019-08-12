@@ -57,10 +57,9 @@ spec:
       }
       steps {
         /* container('gcloud') {
-          sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${imageTag} ."
-        */
-        echo "no builder"
-        }
+          sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${imageTag} ."       
+       */ }
+       echo "remove gcloud"
       }
     }
     stage('Deploy Production') {
@@ -78,15 +77,6 @@ spec:
         }
       }
     }
-    stage('Deploy Dev') {
-      // Developer Branches
-      when {
-        not { branch 'master' }
-        not { branch 'staging' }
-      }
-      steps {
-          echo ' here is only display for DEV'
-        }
-      }
+  
     }
  }
