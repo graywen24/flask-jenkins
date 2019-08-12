@@ -61,13 +61,6 @@ spec:
         }
       }
     }
-    stage('Deploy Staging') {
-      // staging branch
-      when { branch 'staging' }
-      steps {
-
-      }
-    }
     stage('Deploy Production') {
       // Production branch
       when { branch 'master' }
