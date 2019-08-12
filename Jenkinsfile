@@ -1,5 +1,6 @@
 
-#refer to https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app
+/* refer to https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app
+*/
 
 def project = 'wen-wen-1035'
 def  appName = 'hello-app'
