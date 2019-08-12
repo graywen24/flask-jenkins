@@ -42,10 +42,9 @@ spec:
   }
   stages {
     stage('Test') {
+      echo "test only"
         }
-      
-    stage('Build and push image with google cloud Container Builder') {
-    }
+     
     stage('Deploy Production') {
       // Production branch
       when { branch 'master' }
