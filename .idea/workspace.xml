@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a85c3daa-1bd8-407f-81b4-52594010dcdb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565632846712</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update line 78">
+      <created>1565632966039</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565632966039</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add RUN echo path">
+      <created>1565633761735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1565633761735</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +143,7 @@
     <MESSAGE value="change to hello-app" />
     <MESSAGE value="update comments" />
     <MESSAGE value="update line 78" />
-    <option name="LAST_COMMIT_MESSAGE" value="update line 78" />
+    <MESSAGE value="add RUN echo path" />
+    <option name="LAST_COMMIT_MESSAGE" value="add RUN echo path" />
   </component>
 </project>

@@ -1,8 +1,10 @@
 FROM golang:1.8-alpine
 RUN pwd
 RUN echo 'here is current locatin $pwd'
-ADD . /go/src/hello-app
+
 WORKDIR /go/src/hello-app
+ADD . /go/src/hello-app
+ADD src src
 RUN go install hello-app
 
 FROM alpine:latest
