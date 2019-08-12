@@ -42,7 +42,9 @@ spec:
   }
   stages {
     stage('Test') {
-      echo "test only"
+      steps{ 
+        echo "test only"
+      }
         }
      
     stage('Deploy Production') {
