@@ -56,6 +56,7 @@ spec:
         // Change deployed image in canary to the one we just built
           sh("kubectl get deployment ${appName}&&kubectl delete deployment ${appName} && kubectl delete service ${appName} &&sleep 40s ")
           sh("kubectl get deployment ${appName}|| kubectl create deployment ${appName} --image=gcr.io/${PROJECT_ID}/hello-app:v1")
+          sh("sleep 10s")
           echo "==show current pods=="
           sh("kubectl get pods")
           sh("kubectl expose deployment ${appName} --type=LoadBalancer --port 8080 --target-port 8080")
