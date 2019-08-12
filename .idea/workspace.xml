@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a85c3daa-1bd8-407f-81b4-52594010dcdb" name="Default Changelist" comment="">
+    <list default="true" id="a85c3daa-1bd8-407f-81b4-52594010dcdb" name="Default Changelist" comment="remove gcloud container">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565635503785</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="remove gcloud container">
+      <created>1565635693740</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565635693740</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sleep 40s">
+      <created>1565636947258</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565636947258</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +189,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="revert back dockerfile" />
     <MESSAGE value="remove gcloud container" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove gcloud container" />
+    <MESSAGE value="sleep 40s" />
+    <option name="LAST_COMMIT_MESSAGE" value="sleep 40s" />
   </component>
 </project>

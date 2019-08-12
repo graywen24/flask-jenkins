@@ -52,8 +52,9 @@ spec:
       when { branch 'master' }
       steps{
         container('kubectl') {
+        sh("kubectl get pods")
         // Change deployed image in canary to the one we just built
-          sh("kubectl create deployment ${appName} --image=gcr.io/${PROJECT_ID}/hello-app:v1")
+          sh("kubectl get deployment ${appName}&&kubectl delete deployment ${appName} && kubectl delete service ${appName} &&sleep 40s  || kubectl create deployment ${appName} --image=gcr.io/${PROJECT_ID}/hello-app:v1")
           echo "==show current pods=="
           sh("kubectl get pods")
           sh("kubectl expose deployment ${appName} --type=LoadBalancer --port 8080 --target-port 8080")
