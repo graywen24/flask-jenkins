@@ -58,6 +58,7 @@ spec:
           echo "==show current pods=="
           sh("kubectl get pods")
           sh("kubectl expose deployment ${appName} --type=LoadBalancer --port 8080 --target-port 8080")
+          sh("sleep 40s")
           sh("echo http://`kubectl  get service/${appName} -o jsonpath='{.status.loadBalancer.ingress[0].ip}'` ")
        
         }
