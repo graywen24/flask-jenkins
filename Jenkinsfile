@@ -56,8 +56,10 @@ spec:
         not { branch 'dev' }
       }
       steps {
-        container('gcloud') {
+        /* container('gcloud') {
           sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${imageTag} ."
+        */
+        echo "no builder"
         }
       }
     }
