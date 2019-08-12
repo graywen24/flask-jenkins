@@ -75,7 +75,7 @@ spec:
         container('kubectl') {
         // Change deployed image in canary to the one we just built
           sh("kubectl create deployment ${appName} --image=imageTag")
-          echo ""==show current pods=="
+          echo "==show current pods=="
           sh("kubectl get pods")
           sh("kubectl expose deployment ${appName} --type=LoadBalancer --port 8080 --target-port 8080")
           sh("kubectl  get service/${appName} -o jsonpath='{.status.loadBalancer.ingress[0].ip}' > ${publicip} ")
