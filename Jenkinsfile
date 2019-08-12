@@ -42,26 +42,11 @@ spec:
   }
   stages {
     stage('Test') {
-      steps {
-        container('golang') {
-          sh """
-            echo "==== here is TEST==="
-
-          """
+      steps{ 
+        echo "test only"
+      }
         }
-      }
-    }
-    stage('Build and push image with google cloud Container Builder') {
-      when {
-        not { branch 'dev' }
-      }
-      steps {
-       /*  container('gcloud') {
-          sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${imageTag} ."
-          */
-        }
-      }
-    }
+     
     stage('Deploy Production') {
       // Production branch
       when { branch 'master' }
@@ -76,16 +61,6 @@ spec:
           echo 'To access your environment http://${publicip}:8080'
         }
       }
-    }
-    stage('Deploy Dev') {
-      // Developer Branches
-      when {
-        not { branch 'master' }
-        not { branch 'staging' }
-      }
-      steps {
-          echo ' here is only display for DEV'
-        }
-      }
-    }
+    }  
+  }
  }
